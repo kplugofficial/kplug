@@ -777,18 +777,18 @@
 <div id="chatKplug"></div>
 
   <div class="modal fade" id="bukuPanduan" tabindex="-1" aria-labelledby="bukuPanduanLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0 text-center">
           <h5 class="modal-title" id="bukuPanduanLabel">Buku Panduan</h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close shadow-none bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-			<ul class="list-group list-group-numbered">
-			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/PETUNJUK%20TEKNIS%20DAN%20GARANSI%202023.pdf', '_blank')" style="cursor: pointer;">PETUNJUK TEKNIS DAN GARANSI 2023</li>
-			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%20V1D%202020.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG V1D 2020</li>
-			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%201C%202019.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG 1C 2019</li>
-			</ul>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item bg-dark text-white border-0" onclick="window.open('https://kplugofficial.com/PETUNJUK%20TEKNIS%20DAN%20GARANSI%202023.pdf', '_blank')" style="cursor: pointer;">PETUNJUK TEKNIS DAN GARANSI</li>
+            <li class="list-group-item bg-dark text-white border-0" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%20V1D%202020.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG V1D</li>
+            <li class="list-group-item bg-dark text-white border-0" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%201C%202019.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG 1C</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -1083,6 +1083,20 @@
 				changeBrowserTitle: "New Message!", /* Custom text or false. To remove, (changeBrowserTitle:false) */
 				cookie: false, /* It does not show the speech bubble, notification number, and pulse effect again for the specified time. For chatKplug, do not show for 1 hour, (cookie:1) or to remove, (cookie:false) */
 			});
+		</script>
+
+		<script>
+		  if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+			  navigator.serviceWorker.register('service-worker.js')
+				.then((registration) => {
+				  console.log('ServiceWorker registered:', registration);
+				})
+				.catch((error) => {
+				  console.error('ServiceWorker registration failed:', error);
+				});
+			});
+		  }
 		</script>
 	
     </body>
