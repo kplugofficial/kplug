@@ -776,6 +776,24 @@
 
 <div id="chatKplug"></div>
 
+  <div class="modal fade" id="bukuPanduan" tabindex="-1" aria-labelledby="bukuPanduanLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bukuPanduanLabel">Buku Panduan</h5>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+			<ul class="list-group list-group-numbered">
+			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/PETUNJUK%20TEKNIS%20DAN%20GARANSI%202023.pdf', '_blank')" style="cursor: pointer;">PETUNJUK TEKNIS DAN GARANSI 2023</li>
+			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%20V1D%202020.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG V1D 2020</li>
+			  <li class="list-group-item" onclick="window.open('https://kplugofficial.com/MANUAL%20BOOK%20KPLUG%201C%202019.pdf', '_blank')" style="cursor: pointer;">MANUAL BOOK KPLUG 1C 2019</li>
+			</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script src="https://arrafikds.github.io/kplug.js" type="text/javascript"></script>
@@ -847,7 +865,7 @@
 					backgroundColor: "#161c2d", /* Html color code */
 					effect: 1, /* Button effect. Number between 1 and 7 */
 					notificationNumber: "1", /* Custom text or false. To remove, (notificationNumber:false) */
-					speechBubble: "<a class='text-secondary fw-bold text-decoration-none' href='#'>Download buku panduan</a>", /* To remove, (speechBubble:false) */
+					speechBubble: "<a class='text-secondary fw-bold text-decoration-none' href='#' data-bs-toggle='modal' data-bs-target='#bukuPanduan'>Download Panduan</a>", /* To remove, (speechBubble:false) */
 					pulseEffect: false, /* To remove, (pulseEffect:false) */
 					text: { /* For Button style larger than 1 */
 						title: "Need help? Chat with me", /* Writing is required */
