@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    
-    <!-- Homepage -->
     <url>
         <loc>https://kplugofficial.com/</loc>
         <lastmod>2024-08-19</lastmod>
         <priority>1.0</priority>
     </url>
     
-    <!-- Produk -->
     <url>
         <loc>https://kplugofficial.com/produk.html</loc>
         <lastmod>2024-08-19</lastmod>
         <priority>0.8</priority>
     </url>
     
-    <!-- Tentang Kami -->
     <url>
         <loc>https://kplugofficial.com/tentang.html</loc>
         <lastmod>2024-08-19</lastmod>
         <priority>0.6</priority>
     </url>
     
-    <!-- Kontak -->
     <url>
         <loc>https://kplugofficial.com/kontak.html</loc>
         <lastmod>2024-08-19</lastmod>
         <priority>0.6</priority>
     </url>
     
-    <!-- Blog -->
     <url>
         <loc>https://kplugofficial.com/kplug-cam-studio.html</loc>
         <lastmod>2024-08-19</lastmod>
@@ -48,7 +43,6 @@
         <priority>0.7</priority>
     </url>
     
-    <!-- Artikel Blog Individu -->
     <url>
         <loc>https://kplugofficial.com/privacy-policy.html</loc>
         <lastmod>2024-08-19</lastmod>
@@ -65,7 +59,6 @@
         <priority>0.5</priority>
     </url>
     
-    <!-- FAQ -->
     <url>
         <loc>https://kplugofficial.com/faq.html</loc>
         <lastmod>2024-08-19</lastmod>
